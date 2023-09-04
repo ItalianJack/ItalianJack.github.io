@@ -29,3 +29,11 @@ a, .header-nav-link, .footer-nav-link {
 .validators {
     text-align: center;
 }
+
+figure {
+    text-align: center;
+    font-style: italic;
+}
+li {
+    margin: 5px auto;
+}
