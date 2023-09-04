@@ -13,7 +13,7 @@ nav {
     text-align: center;
 }
 
-.header-nav-link, .footer-nav-link {
+a, .header-nav-link, .footer-nav-link {
     color: #cfcfcf;
 }
 
