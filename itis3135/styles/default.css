@@ -1,0 +1,18 @@
+body {
+    background-color: #373737;
+    color: #cfcfcf;
+    font-family: Tahoma, sans-serif;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-family: "Sitka Text", serif;
+}
+
+nav {
+    text-align: center;
+}
+
+.header-nav-link {
+    color: #cfcfcf;
+}
