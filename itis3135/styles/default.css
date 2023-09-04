@@ -13,6 +13,10 @@ nav {
     text-align: center;
 }
 
-.header-nav-link {
+.header-nav-link, .footer-nav-link {
     color: #cfcfcf;
+}
+
+.copyright {
+    text-align: center;
 }
