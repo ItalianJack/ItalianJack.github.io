@@ -20,3 +20,12 @@ nav {
 .copyright {
     text-align: center;
 }
+
+.html-validation, .css-validation {
+    display: inline;
+    margin: auto 20px;
+}
+
+.validators {
+    text-align: center;
+}
