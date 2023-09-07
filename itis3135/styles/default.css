@@ -13,20 +13,20 @@ nav {
     text-align: center;
 }
 
-a, .header-nav-link, .footer-nav-link {
+a {
     color: #cfcfcf;
+    text-decoration: none;
 }
 
-.copyright {
-    text-align: center;
+a:visited {
+    color: #9f9f9f;
 }
 
-.html-validation, .css-validation {
-    display: inline;
-    margin: auto 20px;
+a:hover {
+    color: #efefef;
 }
 
-.validators {
+footer {
     text-align: center;
 }
 
