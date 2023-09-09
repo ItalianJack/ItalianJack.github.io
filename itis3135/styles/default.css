@@ -59,3 +59,26 @@ tr:nth-child(even) {
 td:last-child, td:nth-last-child(2) {
     text-align: center;
 }
+
+label {
+    display: block;
+    margin: 3px auto;
+}
+
+form {
+    border: #9f9f9f solid 2px;
+    width: fit-content;
+    margin: auto;
+}
+
+fieldset {
+    border: none;
+}
+
+hr {
+    width: 90%;
+}
+
+input {
+    margin: auto;
+}
