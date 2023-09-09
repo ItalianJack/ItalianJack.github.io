@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>John Krueger's Judicious Kestrel | ITIS-3135 | Home</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div data-include="components/header.cmp"></div>
+<main>
+    <h2>HTML Tables</h2>
+    <h3>Data</h3>
+    <ol>
+        <li>John Krueger - jkrueger@kruegerdesignco.com - 23</li>
+        <li>Harry Potter - hpotter@kruegerdesignco.com - 22</li>
+        <li>Ronald Weasley - rweasley@kruegerdesignco.com - 10</li>
+        <li>Hermione Granger - hgranger@kruegerdesignco.com - 11</li>
+        <li>Neville Longbottom - nlongbottom@kruegerdesignco.com - 15</li>
+        <li>Fred Weasley - fweasley@kruegerdesignco.com - 2</li>
+        <li>Luna Lovegood - llovegood@kruegerdesignco.com - 7</li>
+    </ol>
+    <br>
+    <h3>Employee Data in Simple Table</h3>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Years of Service</th>
+        </tr>
+        <tr>
+            <td>John Krueger</td>
+            <td>jkrueger@kruegerdesignco.com</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>Harry Potter</td>
+            <td>hpotter@kruegerdesignco.com</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>Ronald Weasley</td>
+            <td>rweasley@kruegerdesignco.com</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Hermione Granger</td>
+            <td>hgranger@kruegerdesignco.com</td>
+            <td>11</td>
+        </tr>
+        <tr>
+            <td>Neville Longbottom</td>
+            <td>nlongbottom@kruegerdesignco.com</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>Fred Weasley</td>
+            <td>fweasley@kruegerdesignco.com</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Luna Lovegood</td>
+            <td>llovegood@kruegerdesignco.com</td>
+            <td>7</td>
+        </tr>
+    </table>
+    <br>
+    <h3>Employee Data in Complex Table</h3>
+    <table>
+        <tr>
+            <th id="role">Role</th>
+            <th id="name">Name</th>
+            <th id="email">Email</th>
+            <th id="years">Years of Service</th>
+            <th id="salary">Monthly Salary</th>
+        </tr>
+        <tr>
+            <td headers="role">CEO</td>
+            <td headers="name">John Krueger</td>
+            <td headers="email">jkrueger@kruegerdesignco.com</td>
+            <td headers="years">23</td>
+            <td headers="salary">$12,500</td>
+        </tr>
+        <tr>
+            <td rowspan="2" headers="role">Web Design</td>
+            <td headers="name">Harry Potter</td>
+            <td headers="email">hpotter@kruegerdesignco.com</td>
+            <td headers="years">22</td>
+            <td headers="salary">$7,750</td>
+        </tr>
+        <tr>
+            <td headers="name">Ronald Weasley</td>
+            <td headers="email">rweasley@kruegerdesignco.com</td>
+            <td headers="years">10</td>
+            <td headers="salary">$6,750</td>
+        </tr>
+        <tr>
+            <td rowspan="2" headers="role">Hardware Design</td>
+            <td headers="name">Hermione Granger</td>
+            <td headers="email">hgranger@kruegerdesignco.com</td>
+            <td headers="years">11</td>
+            <td headers="salary">$8,500</td>
+        </tr>
+        <tr>
+            <td headers="name">Neville Longbottom</td>
+            <td headers="email">nlongbottom@kruegerdesignco.com</td>
+            <td headers="years">15</td>
+            <td headers="salary">$9,250</td>
+        </tr>
+        <tr>
+            <td rowspan="2" headers="role">Implementation</td>
+            <td headers="name">Fred Weasley</td>
+            <td headers="email">fweasley@kruegerdesignco.com</td>
+            <td headers="years">2</td>
+            <td headers="salary">$5,000</td>
+        </tr>
+        <tr>
+            <td headers="name">Luna Lovegood</td>
+            <td headers="email">llovegood@kruegerdesignco.com</td>
+            <td headers="years">7</td>
+            <td headers="salary">$6,500</td>
+        </tr>
+        <tr>
+            <th colspan="3" id="totals">Total Years of Service</th>
+            <td headers="years totals">90</td>
+            <td headers="salary totals">$56,250</td>
+        </tr>
+    </table>
+    <br>
+</main>
+<div data-include="components/footer.cmp"></div>
+<script src="scripts/HTMLInclude.js"></script>
+</body>
+</html>

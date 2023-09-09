@@ -37,3 +37,27 @@ figure {
 li {
     margin: 5px auto;
 }
+
+table {
+    margin: auto;
+    width: 650px;
+    padding: 0;
+}
+
+tr:first-child {
+    background-color: #2a2a2a;
+}
+
+th, td {
+    padding: 3px;
+}
+
+tr:nth-child(even) {
+    background-color: #4a4a4a;
+}
+
+td:last-child, td:nth-last-child(2) {
+    text-align: center;
+}
+
+td
