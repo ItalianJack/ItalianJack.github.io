@@ -14,7 +14,7 @@
         <h3>Business Inquiry</h3>
         <fieldset>
             <label for="name">Name: <input id="name" type="text" placeholder="John Smith" required></label>
-            <label for="phone">Phone number: <input id="phone" type="tel" placeholder="123-456-1780"></label>
+            <label for="phone">Phone: <input id="phone" type="tel" placeholder="123-456-1780"></label>
             <label for="email">Email: <input id="email" type="email" placeholder="john@smith.co" required></label>
         </fieldset>
         <hr>
@@ -22,16 +22,29 @@
             <label>Which services are you interested in?</label>
             <label for="web"><input id="web" type="checkbox"> Web design services</label>
             <label for="hardware"><input id="hardware" type="checkbox"> Hardware design services</label>
-            <label for="installation"><input id="installation" type="checkbox"> Installation/implementation services</label>
+            <label for="installation"><input id="installation" type="checkbox"> Installation/implementation
+                services</label>
         </fieldset>
         <hr>
         <fieldset>
             <label>How large is your company?</label>
-            <label for="small-business"><input id="small-business" type="radio" name="business-size"> Small (fewer than 100 employees)</label>
-            <label for="medium-business"><input id="medium-business" type="radio" name="business-size"> Medium (between 100 and 1,500 employees)</label>
-            <label for="large-business"><input id="large-business" type="radio" name="business-size"> Large (greater than 1,500 employees)</label>
+            <label for="small-business"><input id="small-business" type="radio" name="business-size"> Small (fewer than
+                100 employees)</label>
+            <label for="medium-business"><input id="medium-business" type="radio" name="business-size"> Medium (between
+                100 and 1,500 employees)</label>
+            <label for="large-business"><input id="large-business" type="radio" name="business-size"> Large (greater
+                than 1,500 employees)</label>
         </fieldset>
         <hr>
+        <fieldset>
+            <label for="dropdown">Have you completed a project with us before?
+                <select id="dropdown">
+                    <option>--Choose one--</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </label>
+        </fieldset>
         <fieldset>
             <input type="submit" value="Submit">
             <input type="reset" value="Reset">
