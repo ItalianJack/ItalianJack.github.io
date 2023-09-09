@@ -5,6 +5,10 @@
     <link rel="stylesheet" href="styles/default.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href)
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/check/" + location.href)
+    </script>
 </head>
 <body>
 <header>
@@ -33,7 +37,6 @@
         <a href="https://www.linkedin.com/in/johnkruegernc/">LinkedIn</a>
     </nav>
     <p>Designed By <a href="kruegerdesignco.com">Krueger Design Co.</a> - &#169; 2023</p>
-<!--    TODO Implement script so that validators work on both GitHub.io and Charlotte Webpages     -->
     <a href="https://validator.w3.org/check?uri=referer">
         <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
     </a>
