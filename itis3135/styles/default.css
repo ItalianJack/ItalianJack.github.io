@@ -82,3 +82,15 @@ hr {
 input {
     margin: auto;
 }
+
+input[type="submit"], input[type="reset"], select, input {
+    color: #cfcfcf;
+    background-color: #2a2a2a;
+    border: #9f9f9f solid 2px;
+    border-radius: 3px;
+}
+
+input:hover {
+    background-color: #373737;
+}
+
