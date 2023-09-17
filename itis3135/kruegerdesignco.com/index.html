@@ -3,69 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <title>Krueger Design Co.</title>
+    <!--  Color scheme:  https://coolors.co/ce9c00-8d8985-ffffff-5c415d-363537    -->
+    <!--  Logo:  https://openclipart.org/detail/267691/eagle-6    -->
     <style>
         body {
             font-family: Cambria, serif;
+            color: #ffffff;
+            background: #8d8985;
+            margin: 0;
         }
-        div.main {
-            border: cadetblue solid 3px;
-            width: 500px;
-            height: 500px;
-            margin: auto auto;
+
+        header, footer {
+            background: #363537;
+            padding: 10px 0;
             text-align: center;
         }
 
-        .globe-gif {
-            width: 150px;
-            display: block;
-            margin: auto;
+        header div {
+            display: flex;
+            justify-content: space-evenly;
         }
 
-        hr {
-            width: 90%;
+        header img {
+            width: 75px;
+            height: 75px;
         }
 
-        p {
-            width: 90%;
-            margin: 10px auto;
-        }
-        .html-validation, .css-validation {
-            display: inline;
-            margin: auto 20px;
+        header h1 {
+            height: fit-content;
+            margin: auto 0;
         }
 
-        .validators {
-            text-align: center;
+        main {
+            padding: 20px;
+        }
+
+        a {
+            color: white;
+        }
+
+        a:hover {
+            color: #ce9c00;
+        }
+
+        footer {
+            padding-bottom: 20px;
+        }
+
+        #validation_link_css, #validation_link_html {
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-<div class="main">
-    <header>
+<header>
+    <div>
+        <img src="../images/raptor.svg" alt="Raptor logo">
         <h1>Krueger Design Co.</h1>
-        <h3><i>Digital Designs Across the Globe!</i></h3>
-        <hr>
-    </header>
-    <main>
-        <img src="spinning-globe.gif" alt="Animated spinning globe" class="globe-gif">
-        <p>Welcome to Krueger Design Co.! We are a business located in Charlotte, NC providing web and hardware design,
-            implementation, and consulting. We have had clients spanning the globe since our establishment in 2000!</p>
+    </div>
+</header>
+<main>
+    <h2>About Us</h2>
+    <p>Welcome to Krueger Design Co.! We are a business located in Charlotte, NC providing web and hardware design,
+        implementation, and consulting. We have had clients around the globe since our establishment in 2000!</p>
+    <p>What makes us great:</p>
+    <ul>
+        <li>Native to North Carolina</li>
+        <li>Family owned and operated</li>
+        <li>Over 20 years of experience</li>
+        <li>Masters of the latest technology</li>
+    </ul>
+    <p>Here at Krueger Design Co., we offer web, server, and other hardware design services, as well as implementation of designs from others. We will always take new clients! If you are interested in working with us, please contact:</p>
+    <address>
+        John Krueger, CEO<br>
+        <a href="#">jkrueger@kruegerdesignco.com</a><br>
+        1234 Main St<br>
+        Charlotte, NC 28117
+    </address>
     </main>
-    <footer>
-        <hr>
-        <p><i>Digital Designs Across the Globe!</i></p>
-        <p>&#169; 2023, Krueger Design Co.</p>
-        <div class="validators">
-            <p class="css-validation"><a href="https://jigsaw.w3.org/css-validator/check/referer"><img
-                    style="border:0;width:88px;height:31px" src="../images/button-valid-css.gif"
-                    alt="Link to CSS Validator"></a></p>
-            <p class="html-validation"><a href="https://validator.w3.org/check?uri=referer"><img
-                    src="../images/button-valid-html5.gif" style="border:0;width:88px;height:31px"
-                    alt="Link to HTML validator"></a></p>
-        </div>
-    </footer>
+<footer>
+    <p><i>Digital Designs Around the Globe!</i></p>
+    <p>&#169; 2023, Krueger Design Co.</p>
+    <a id="validation_link_html" href="https://validator.w3.org/check?uri=referer">
+        <img style="border:0;width:88px;height:31px"
+             src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
+    </a>
+    <a id="validation_link_css" href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
+             alt="Valid CSS!">
+    </a>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+</footer>
 
-</div>
 
 </body>
 </html>
