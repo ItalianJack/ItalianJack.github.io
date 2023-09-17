@@ -1,0 +1,18 @@
+h1 {
+    font-family: "Comic Sans MS";
+    margin: 50px 40px 20px 123px;
+}
+
+body {
+    font-family: "Times New Roman";
+    margin: 100px 20px 0 0;
+}
+
+h3 {
+    background-color: #373737;
+}
+
+h5 {
+    color: darkblue;
+    text-decoration: underline;
+}
