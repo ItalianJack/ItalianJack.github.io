@@ -23,10 +23,6 @@ a {
     text-decoration: none;
 }
 
-a:visited {
-    color: #9f9f9f;
-}
-
 a:hover {
     color: #efefef;
 }
