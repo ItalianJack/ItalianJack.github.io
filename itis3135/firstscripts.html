@@ -9,8 +9,16 @@
 <body>
 <div data-include="components/header.html"></div>
 <main>
-    <h2>Home</h2>
-    <p>Here is some text. Welcome!</p>
+    <h2>First Scripts</h2>
+    <h3 id="dateTime"></h3>
+    <form onsubmit="return false">
+        <label for="name">Name: <input id="name" type="text"></label>
+        <label for="mood">Name: <input id="mood" type="text"></label>
+        <input type="submit" onclick="displayGreeting()" value="Obtain Greeting">
+    </form>
+    <p id="greeting"></p>
+
+    <script src="scripts/firstscript.js"></script>
 </main>
 <div data-include="components/footer.html"></div>
 <script src="scripts/HTMLInclude.js"></script>
