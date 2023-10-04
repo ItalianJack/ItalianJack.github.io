@@ -71,6 +71,7 @@ form {
     border: #9f9f9f solid 2px;
     width: fit-content;
     margin: auto;
+    padding: 20px 15px;
 }
 
 fieldset {
@@ -83,9 +84,10 @@ hr {
 
 input {
     margin: auto;
+    padding: 2px 5px;
 }
 
-input[type="submit"], input[type="reset"], select, input {
+input[type="submit"], input[type="reset"], select, input, button {
     color: #cfcfcf;
     background-color: #2a2a2a;
     border: #9f9f9f solid 2px;
