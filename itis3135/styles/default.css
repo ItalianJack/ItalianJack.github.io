@@ -98,6 +98,6 @@ input:hover {
     background-color: #373737;
 }
 
-fieldset:first-of-type {
-    text-align: center;
-}
+/*fieldset:first-of-type {*/
+/*    text-align: center;*/
+/*}*/

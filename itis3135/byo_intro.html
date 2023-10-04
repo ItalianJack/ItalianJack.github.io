@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="styles/default.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/generateIntro.js"></script>
 </head>
 <body>
 <div data-include="components/header.html"></div>
@@ -19,10 +20,8 @@
         <label for="background-professional">Professional background:<br><textarea id="background-professional" required></textarea></label>
         <label for="background-academic">Academic background:<br><textarea id="background-academic" required></textarea></label>
         <label for="computer-platform">Preferred computing platform: <input id="computer-platform" required></label>
-        <label for="class-list">Courses I'm Taking:
-            <fieldset id="class-list">
-                <button>Add Course</button>
-            </fieldset>
+        <label for="class-list">Courses I'm Taking: <button type="button" onclick="addCourse()">Add</button>
+            <fieldset id="class-list"></fieldset>
         </label>
         <label for="memory-fact">Fun Fact to remember me by:<br><textarea id="memory-fact"></textarea></label>
         <label for="also-share">I'd also like to share:<br><textarea id="also-share"></textarea></label>
