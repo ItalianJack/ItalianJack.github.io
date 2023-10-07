@@ -9,24 +9,45 @@
 </head>
 <body>
 <div data-include="components/header.html"></div>
-<main>
+<!--ID of main used in generateIntro.js-->
+<main id="main">
     <h2>Build Your Own Intro</h2>
     <form action="#">
-        <label for="name">Name: <input id="name" type="text" required></label>
-        <label for="mascot">Mascot: <input id="mascot" type="text" required></label>
+        <label for="name">Name: <input id="name" type="text" required value="John Krueger"></label>
+        <label for="mascot">Mascot: <input id="mascot" type="text" required value="Judicious Kestrel"></label>
         <label for="user-image">Image: <input id="user-image" type="file" accept=".png, .jpg"></label>
-        <label for="image-caption">Image Caption: <input id="image-caption" type="text" required></label>
-        <label for="background-personal">Personal background:<br><textarea id="background-personal" required></textarea></label>
-        <label for="background-professional">Professional background:<br><textarea id="background-professional" required></textarea></label>
-        <label for="background-academic">Academic background:<br><textarea id="background-academic" required></textarea></label>
-        <label for="computer-platform">Preferred computing platform: <input id="computer-platform" required></label>
-        <label for="class-list">Courses I'm Taking: <button type="button" onclick="addCourse()">Add</button>
-            <fieldset id="class-list"></fieldset>
+        <label for="image-caption">Image Caption: <input id="image-caption" type="text" required
+                                                         value="Rockin' at Flight School"></label>
+        <label for="background-personal">Personal background:<br>
+            <textarea id="background-personal" required>Military brat, born in Italy, and moved all over the eastern/midwestern US before settling in Charlotte in 2012. Curious about pretty much everything, but I spend my time doing somelight gaming, working on my home server, flying airplanes and shooting (as finances allow), and tinkering with everything from my car to radios to 3d printing.</textarea>
         </label>
-        <label for="memory-fact">Fun Fact to remember me by:<br><textarea id="memory-fact"></textarea></label>
-        <label for="also-share">I'd also like to share:<br><textarea id="also-share"></textarea></label>
-        <label><input id="disclaimer-agree" type="checkbox"> I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label>
-        <input type="submit" value="Generate Intro">
+        <label for="background-professional">Professional background:<br>
+            <textarea id="background-professional" required>Coached NASP archery team and classes for middle & high schoolers for 2 years. Taught a few classes for my homeschool co-op, too. Worked an internship doing IT for an engineering firm summer of 2023.</textarea>
+        </label>
+        <label for="background-academic">Academic background:<br>
+            <textarea id="background-academic" required>Proud homeschooler and graduate of South Piedmont Community College with an Associate in Science. EMT trained, and also made it to National Finals for the CyberPatriot cybersecurity defense competition back in high school. Private Pilot as of May of this year.</textarea>
+        </label>
+        <label for="computer-platform">Preferred computing platform:<br>
+            <textarea id="computer-platform" required>Windows is spyware trash, Pop_OS!/Ubuntu Linux all the way. Living with an operating system that no one has heard of only occasionally makes me want to break things.</textarea>
+        </label>
+        <label for="class-list">Courses I'm Taking:
+            <button type="button" onclick="addCourse()">Add</button>
+            <fieldset id="class-list">
+                <label>Course:
+                    <button type="button" onclick="deleteCourse(this)">Delete Course</button><br>
+                    <textarea></textarea>
+                </label>
+            </fieldset>
+        </label>
+        <label for="memory-fact">Fun Fact to remember me by:<br>
+            <textarea id="memory-fact"></textarea>
+        </label>
+        <label for="also-share">I'd also like to share:<br>
+            <textarea id="also-share"></textarea>
+        </label>
+        <label><input id="disclaimer-agree" type="checkbox"> I understand that what is on this page is not password
+            protected and I will not put anything here that I don’t want publicly available.</label>
+        <input type="submit" value="Generate Intro" onclick="generateIntro()">
     </form>
 </main>
 <div data-include="components/footer.html"></div>
