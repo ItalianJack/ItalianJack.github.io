@@ -1,0 +1,123 @@
+/* Universal styling (fonts, colors, etc.) */
+:root {
+    --primary-font: Tahoma, sans-serif;
+    --secondary-font: "Sitka Text", serif;
+
+    --primary-color: #373737;
+    --secondary-color: #cfcfcf;
+    --tertiary-color: #C52233;
+}
+
+/* Structural elements */
+body {
+    background-color: #373737;
+    color: #cfcfcf;
+    font-family: Tahoma, sans-serif;
+}
+
+nav {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+figure {
+    text-align: center;
+    font-style: italic;
+}
+
+hr {
+    width: 90%;
+}
+
+/* Text elements */
+h1, h2 {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: "Sitka Text", serif;
+}
+
+
+/* Links/anchors */
+
+
+
+
+li {
+    margin: 5px auto;
+}
+
+
+/* Tables */
+table {
+    margin: auto;
+    width: 650px;
+    padding: 0;
+}
+
+tr:first-child {
+    background-color: #2a2a2a;
+}
+
+th, td {
+    padding: 3px;
+}
+
+tr:nth-child(even) {
+    background-color: #4a4a4a;
+}
+
+td:last-child, td:nth-last-child(2) {
+    text-align: center;
+}
+
+/* Forms/input */
+label {
+    display: block;
+    margin: 3px auto;
+}
+
+fieldset {
+    border: none;
+}
+
+input {
+    margin: auto;
+    padding: 2px 5px;
+}
+
+input[type="submit"], input[type="reset"], select, input, button {
+    color: #cfcfcf;
+    background-color: #2a2a2a;
+    border: #9f9f9f solid 2px;
+    border-radius: 3px;
+}
+
+input:hover {
+    background-color: #373737;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query since this is the default */
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    main {
+        width: 90%;
+        margin: auto;
+        max-width: 1000px;
+    }
+
+    form {
+        border: #9f9f9f solid 2px;
+        width: fit-content;
+        margin: auto;
+        padding: 20px 15px;
+    }
+}
