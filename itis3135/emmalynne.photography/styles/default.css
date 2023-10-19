@@ -1,0 +1,50 @@
+/* Define fonts and colors */
+:root {
+    --primary-color: #fff;
+    --secondary-color: #000;
+}
+
+/* Universal styling (fonts, colors, etc.) */
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header>a {
+    width: fit-content;
+    height: fit-content;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav>a {
+    border: solid 1px blue;
+    padding: 2px 5px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query since this is the default */
+body {
+    margin: 0;
+}
+
+header {
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav {
+    width: 60%;
+    justify-content: center;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
