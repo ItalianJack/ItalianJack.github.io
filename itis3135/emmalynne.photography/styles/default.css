@@ -5,10 +5,19 @@
 }
 
 /* Universal styling (fonts, colors, etc.) */
+body {
+    background: var(--secondary-color);
+}
+
+main {
+    background: var(--primary-color);
+}
+
 header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background: var(--primary-color);
 }
 
 header>a {
@@ -27,6 +36,11 @@ nav>a {
     padding: 2px 5px;
 }
 
+footer {
+    color: var(--primary-color);
+    text-align: center;
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query since this is the default */
 body {
@@ -43,6 +57,35 @@ nav {
     width: 60%;
     justify-content: center;
 }
+
+main {
+    padding-bottom: 0.01px;
+}
+
+figure {
+    margin: 0;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+figure>img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    filter: brightness(60%);
+}
+
+figure>div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+figure h1, figure h2 {
+    margin: 0;
+}
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
