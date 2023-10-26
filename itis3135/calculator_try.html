@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>John Krueger's Judicious Kestrel | ITIS-3135 | Calculator</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/calculator.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div data-include="components/header.html"></div>
+<main>
+    <h2>Calculator</h2>
+    <div id="calculator">
+        <div id="calculator_display">0</div>
+        <div id="calculator_buttons">
+            <button class="operator" data-action="add">+</button>
+            <button class="operator" data-action="subtract">-</button>
+            <button class="operator" data-action="multiply">&times;</button>
+            <button class="operator" data-action="divide">&divide;</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>0</button>
+            <button data-action="decimal">.</button>
+            <button data-action="clear">C</button>
+            <button id="equals" data-action="equals">=</button>
+        </div>
+    </div>
+    <script src="scripts/calculator.js"></script>
+</main>
+<div data-include="components/footer.html"></div>
+<script src="scripts/HTMLInclude.js"></script>
+</body>
+</html>

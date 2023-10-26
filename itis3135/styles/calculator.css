@@ -1,0 +1,26 @@
+#calculator {
+    max-width: 400px;
+    margin: auto;
+}
+
+#calculator_display {
+    height: 2rem;
+    border: var(--secondary-color) 2px solid;
+    text-align: right;
+    border-radius: 3px;
+}
+
+#calculator_buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#calculator_buttons > * {
+    padding: 10px;
+}
+
+#equals {
+    grid-column: 4;
+    grid-row-start: 2;
+    grid-row-end: 6;
+}

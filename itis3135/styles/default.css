@@ -76,7 +76,7 @@ main {
     margin: 0 5px;
 }
 
-ul {
+ul, ol {
     padding-left: 15px;
 }
 
