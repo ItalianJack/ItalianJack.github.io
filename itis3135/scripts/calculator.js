@@ -13,7 +13,7 @@ buttonsDiv.addEventListener("click", e => {
             appendDisplayCurrent(e.target.innerText);
             break;
         case "clear":
-            calcDisplay.innerText = "0";
+            clearCurrentNum();
             break;
         case "add":
         case "subtract":
@@ -30,7 +30,14 @@ buttonsDiv.addEventListener("click", e => {
                 operation = null;
             }
             break;
-
+        case "negate":
+            if (calcDisplay.innerText === "0") {
+                break;
+            } else if (calcDisplay.innerText[0] === "-") {
+                calcDisplay.innerText = calcDisplay.innerText.slice(1);
+            } else {
+                calcDisplay.innerText = "-" + calcDisplay.innerText;
+            }
     }
 });
 
@@ -42,10 +49,6 @@ function appendDisplayCurrent(val) {
     }
 }
 
-function clearCurrentNum() {
-    calcDisplay.innerText = "0";
-}
-
 function storeNumber() {
     if (storedNum !== 0) {
         storedNum = calculate();
@@ -54,6 +57,10 @@ function storeNumber() {
     }
     clearCurrentNum();
     console.log("Stored number: " + storedNum);
+}
+
+function clearCurrentNum() {
+    calcDisplay.innerText = 0;
 }
 
 function calculate() {

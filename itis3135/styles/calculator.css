@@ -23,8 +23,6 @@
     display: none;
 }
 
-
-
 #calculator_buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -36,6 +34,11 @@
 
 #equals {
     grid-column: 4;
-    grid-row-start: 2;
+    grid-row-start: 3;
     grid-row-end: 6;
+}
+
+#negate {
+    grid-column: 4;
+    grid-row-start: 2;
 }
