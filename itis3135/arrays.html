@@ -10,12 +10,18 @@
 <div data-include="components/header.html"></div>
 <main>
     <h2>Arrays</h2>
-    <section id="script-target"></section>
-    <button id="addSalaryButton">addSalary</button>
+    <form>
+        <fieldset>
+            <label for="nameInput">Name <input type="text" name="nameInput" id="nameInput" required></label>
+            <label for="salaryInput">Salary $<input type="number" name="salaryInput" id="salaryInput" required min="0"></label>
+            <button id="addSalaryButton">addSalary</button>
+        </fieldset>
+    </form>
     <button id="displayResultsButton">displayResults</button>
     <button id="displaySalaryButton">displaySalary</button>
 </main>
 <div data-include="components/footer.html"></div>
 <script src="scripts/HTMLInclude.js"></script>
+<script src="scripts/arrays.js"></script>
 </body>
 </html>
