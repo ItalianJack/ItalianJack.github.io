@@ -19,14 +19,6 @@ body {
     margin: 0;
 }
 
-/*header {*/
-/*    background: var(--primary-color);*/
-/*}*/
-
-/*main {*/
-/*    background: var(--primary-color);*/
-/*}*/
-
 h1 {
     font-family: var(--primary-font);
     font-style: italic;
@@ -44,6 +36,11 @@ a {
 a:hover {
     background: var(--quarternary-color);
     color: var(--secondary-color);
+}
+
+main {
+    border-top: solid 1px var(--secondary-color);
+    border-bottom: solid 1px var(--secondary-color);
 }
 
 /* BEGIN COVER IMAGE STYLING */
