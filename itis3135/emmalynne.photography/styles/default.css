@@ -1,88 +1,127 @@
 /* Define fonts and colors */
 :root {
-    --primary-color: #fff;
-    --secondary-color: #000;
+    --primary-color: #F7EBEC;
+    --secondary-color: #1D1E2C;
+    --tertiary-color: #59656F;
+    --quarternary-color: #AC9FBB;
+    --fifth-color: #DDBDD5;
+
+    --primary-font: 'Clicker Script', serif;
+    --secondary-font: 'Enriqueta', serif;
+    --tertiary-font: 'Taviraj';
 }
 
 /* Universal styling (fonts, colors, etc.) */
 body {
-    background: var(--secondary-color);
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: var(--tertiary-font);
     margin: 0;
 }
 
-header {
-    background: var(--primary-color);
+h1 {
+    font-family: var(--primary-font);
+    font-style: italic;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: var(--secondary-font);
+}
+
+a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+a:hover {
+    background: var(--quarternary-color);
+    color: var(--secondary-color);
+}
+
+a.icon:hover, a.logo:hover {
+    color: var(--tertiary-color);
+    background: none;
 }
 
 main {
-    background: var(--primary-color);
+    border-top: solid 1px var(--secondary-color);
+    border-bottom: solid 1px var(--secondary-color);
 }
 
 /* BEGIN COVER IMAGE STYLING */
-figure {
+figure.overlay-caption-center {
     margin: 0;
     color: white;
     position: relative;
     text-align: center;
 }
 
-figure>img {
+figure.overlay-caption-center>img {
     object-fit: cover;
     width: 100%;
     height: 300px;
     filter: brightness(60%);
 }
 
-figure>div {
+figure.overlay-caption-center>figcaption {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-figure h1, figure h2 {
+figure.overlay-caption-center h1, figure.overlay-caption-center h2 {
     margin: 0;
 }
 /* END COVER IMAGE STYLING*/
 
 /* Extra small devices (portrait phones, less than 576px) */
-/* No media query since this is the default */
+@media (max-width: 576px) {
+    /* BEGIN DROPDOWN STYLING */
+    header {
+        overflow: hidden;
+        position: relative;
+    }
 
-/* BEGIN DROPDOWN STYLING */
-header {
-    overflow: hidden;
-    position: relative;
+    .logo-and-icon {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 10px 10px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header nav a {
+        padding: 14px 16px;
+        display: block;
+    }
+    /* END DROPDOWN STYLING*/
 }
-
-.logo-and-icon {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    padding: 10px 10px;
-}
-
-header nav {
-    display: none;
-}
-
-header nav a {
-    padding: 14px 16px;
-    display: block;
-}
-
-.logo {
-    width: 115px;
-}
-
-/*header a.icon {*/
-/*    display: block;*/
-/*    position: absolute;*/
-/*    right: 0;*/
-/*    top: 0;*/
-/*}*/
-/* END DROPDOWN STYLING*/
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
 
+    header .icon {
+        display: none;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header a {
+        text-align: center;
+        height: fit-content;
+        padding: 0 10px;
+    }
 }
