@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Hobby Page</title>
+    <script>
+        function showArticle(articleId) {
+            document.querySelectorAll("article").forEach((object) => {
+                object.style.display = "none";
+            });
+            document.querySelector(`#${articleId}`).style.display = "initial";
+        }
+    </script>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="#" onclick="showArticle('home');">Home</a><a href="#" onclick="showArticle('page2');">page2</a><a
+            href="#" onclick="showArticle('page3');">page3</a>
+    </nav>
+    <hr>
+</header>
+<article id="home">
+    <h2>Home</h2>
+</article>
+<article id="page2">
+    <h2>Solo School</h2>
+</article>
+<article id="page3">
+    <h2>Continued Training</h2>
+</article>
+<footer>
+    <hr>
+    &copy; 2023 Krueger Design Co.
+</footer>
+<script>showArticle('home');</script>
+</body>
+</html>
