@@ -1,6 +1,6 @@
 const fizzbuzzcontent = document.querySelector("#fizzbuzzcontent");
 
-for (let i = 1; i <= 100; i++) {
+for (let i = 1; i <= 110; i++) {
     let tempStr = "";
     if (i % 3 === 0) {
         tempStr += "fizz";
