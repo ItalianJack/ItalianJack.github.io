@@ -50,7 +50,6 @@
             color: white;
             text-decoration: none;
             padding: 5px;
-            border: 2px transparent;
             height: fit-content;
             border: black 2px solid;
         }
@@ -110,11 +109,13 @@
 </head>
 <body>
 <header>
-    <a href="#" onclick="showArticle('home');"><h1>Q</h1>
-        <h5>Jack's Flying</h5></a>
+    <a href="#" onclick="showArticle('home');">
+        <h1>Q</h1>
+        <h5>Jack's Flying</h5>
+    </a>
     <nav>
-        <a href="#" onclick="showArticle('page2');">SOLO SCHOOL</a><a
-            href="#" onclick="showArticle('page3');">CADET WINGS</a>
+        <a href="#" onclick="showArticle('page2');">PT. 2 SOLO SCHOOL</a><a
+            href="#" onclick="showArticle('page3');">PT. 3 </a>
     </nav>
 </header>
 <main>
@@ -142,8 +143,28 @@
     <article id="page2">
         <h2>Part 2: Solo School</h2>
         <p>
-            Fast forward h
+            Fast-forward to 2019, and I join Civil Air Patrol, the civilian auxiliary of the Air Force. The Civil Air
+            Patrol has been around since WWII, and provides a large portion of ground search and rescue services for the
+            contiguous US. CAP also has cadet programs, that train youth in leadership skills and military discipline.
+            As part of the cadet program, I had the opportunity to go to a week-long flight academy, the Col. Roland
+            Butler Powered Flight Academy in Camden, SC.
         </p>
+        <figure>
+            <img src="images/sunset_cap_tail.JPEG" alt="CAP Airplane tail and sunset">
+            <figcaption>Sunset of a lifetime</figcaption>
+        </figure>
+        <p>
+            That week was a crash-course (sans-crash) in aviation basics: how airplanes fly, the "rules of the road" for
+            the air, how to take off and land, and what to do in an emergency. The goal of the academy was to establish
+            a solid foundation for becoming a safe pilot, and to get us as close to as possible if not taking our first
+            solo flight by the end of the week. Thanks to a fantastic instructor (miss you, Capt. Coolidge!) and weather
+            clearing up later in the week, I was able to take my first solo flight, a thrilling single take off and
+            landing at KLKR in SC.
+        </p>
+        <figure>
+            <img alt="Refueling at sunset" src="images/sunset_refueling.JPG">
+            <figcaption>Evening refuel after a long day of flying</figcaption>
+        </figure>
     </article>
     <article id="page3">
         <h2>Continued Training</h2>
@@ -165,6 +186,6 @@
         document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
     </script>
 </footer>
-<script>showArticle('home');</script>
+<script>showArticle('page2');</script>
 </body>
 </html>
