@@ -15,34 +15,155 @@
         }
     </script>
     <style>
-        ::root {
-            --primary-color: #014efe;
-            --secondary-color: #56350a;
-            --tertiary-color: #fc02f8;
-            --quarternary-color: #04fefe;
+        :root {
+            --color1: #014efe;
+            --color2: #56350a;
+            --color3: #fc02f8;
+            --color4: #04fefe;
+        }
+
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
+        body {
+            margin: 0;
+            background: var(--color1);
+            color: white;
+            font-family: sans-serif;
+        }
+
+        /* HEADER STYLING */
+        header {
+            background: black;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+            border: 2px transparent;
+            height: fit-content;
+            border: black 2px solid;
+        }
+
+        main a {
+            color: var(--color3);
+        }
+
+        a:hover {
+            border: var(--color4) 2px solid;
+        }
+
+        nav {
+            width: 60%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        header h1 {
+            font-family: Wingdings;
+            margin: auto;
+            text-align: center;
+        }
+
+        header h5 {
+            margin: auto;
+        }
+
+        /* END HEADER STYLING */
+
+        main {
+            background: #3d53a6;
+            border-radius: 5%;
+            padding: 5px;
+            margin: 10px 5px;
+        }
+
+        figure img {
+            width: 100%;
+        }
+
+        figcaption {
+            text-align: center;
+            font-style: italic;
+        }
+
+        footer {
+            background: var(--color2);
+            color: white;
+            text-align: center;
+            padding: 1px 0;
+            padding-bottom: 10px;
         }
     </style>
 </head>
 <body>
 <header>
+    <a href="#" onclick="showArticle('home');"><h1>Q</h1>
+        <h5>Jack's Flying</h5></a>
     <nav>
-        <a href="#" onclick="showArticle('home');">Home</a><a href="#" onclick="showArticle('page2');">page2</a><a
-            href="#" onclick="showArticle('page3');">page3</a>
+        <a href="#" onclick="showArticle('page2');">SOLO SCHOOL</a><a
+            href="#" onclick="showArticle('page3');">CADET WINGS</a>
     </nav>
-    <hr>
 </header>
-<article id="home">
-    <h2>Home</h2>
-</article>
-<article id="page2">
-    <h2>Solo School</h2>
-</article>
-<article id="page3">
-    <h2>Continued Training</h2>
-</article>
+<main>
+    <article id="home">
+        <h2>Welcome</h2>
+        <figure>
+            <img alt="Disembarking after initial solo" src="images/solo_exiting.jpg">
+            <figcaption>Just soloed</figcaption>
+        </figure>
+        <p>
+            Hey there! I'm Jack, a private pilot, Civil Air Patrol cadet and aviation enthusiast. Here I'll share the
+            story of how I became a private pilot and everything I love about flying.
+        </p>
+        <h3>Part 1: In the beginning...</h3>
+        <p>
+            I've never been too far from airplanes growing up. My dad became a private pilot while he was in the
+            service, and even though he didn't fly for work it was not unusual for us to have fighter jets flying over
+            our house. We'd go to airshows together, and he even knew a pilot or two from the Thunderbirds. Suffice it
+            to say, anytime we were around an airport I was having a good time. Though I wasn't the type to fantasize
+            about becoming a pilot, I certainly thought it would be cool to do so. Little did I know what was in store
+            for me in the future.
+        </p>
+        <a href="#" onclick="showArticle('page2')">Continue to part 2</a>
+    </article>
+    <article id="page2">
+        <h2>Part 2: Solo School</h2>
+        <p>
+            Fast forward h
+        </p>
+    </article>
+    <article id="page3">
+        <h2>Continued Training</h2>
+    </article>
+</main>
 <footer>
-    <hr>
-    &copy; 2023 Krueger Design Co.
+    <p>&copy; 2023 Krueger Design Co.</p>
+    <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+        <img alt="Valid HTML!"
+             src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png"
+             style="border:0;width:88px;height:31px">
+    </a>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+        <img alt="Valid CSS!" src="https://jigsaw.w3.org/css-validator/images/vcss"
+             style="border:0;width:88px;height:31px">
+    </a>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
 </footer>
 <script>showArticle('home');</script>
 </body>
