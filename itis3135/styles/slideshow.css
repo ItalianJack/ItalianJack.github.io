@@ -1,0 +1,11 @@
+.slideshow * {
+    border: white 1px dotted;
+}
+
+img {
+    background: white;
+}
+
+.slideshow {
+    width: 100%;
+}
