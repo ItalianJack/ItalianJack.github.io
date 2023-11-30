@@ -10,7 +10,3 @@ function toggleNav(override = null) {
         }
     }
 }
-
-document.querySelector("main").addEventListener('click', ()=>{
-    toggleNav("none");
-});
