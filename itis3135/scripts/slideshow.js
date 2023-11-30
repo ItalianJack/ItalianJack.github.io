@@ -1,3 +1,5 @@
+const NUM_SLIDES = 11;
+
 // Event listeners for thumbnails
 document.querySelectorAll(".thumbnails img").forEach((thumbnail, index) => {
     thumbnail.addEventListener("click", showSlideFromEvent);
@@ -20,7 +22,11 @@ showSlide(currentSlide);
 
 //
 function incrementSlide(numSlidesToChange) {
-    showSlide(currentSlide + numSlidesToChange);
+    let targetSlide = currentSlide + numSlidesToChange;
+    if (targetSlide < 0) { targetSlide += NUM_SLIDES; }
+    if (targetSlide >= NUM_SLIDES) { targetSlide -= NUM_SLIDES; }
+    console.log(targetSlide);
+    showSlide(targetSlide);
 }
 
 function showSlideFromEvent(event) {
@@ -33,5 +39,6 @@ function showSlide(slideNum) {
         slide.style.display = "none";
     });
     slides[slideNum].style.display = "initial";
+    document.querySelector('.caption').textContent = slides[slideNum].getAttribute('alt');
     currentSlide = slideNum;
 }
