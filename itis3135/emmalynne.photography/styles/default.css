@@ -12,6 +12,17 @@
 }
 
 /* Universal styling (fonts, colors, etc.) */
+.desktop-warning {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    margin: 0;
+    padding: 5px;
+}
+
+header {
+    border-bottom: solid 1px var(--secondary-color);
+}
+
 body {
     background: var(--primary-color);
     color: var(--secondary-color);
@@ -43,11 +54,6 @@ a.icon:hover, a.logo:hover {
     background: none;
 }
 
-main {
-    border-top: solid 1px var(--secondary-color);
-    border-bottom: solid 1px var(--secondary-color);
-}
-
 /* BEGIN COVER IMAGE STYLING */
 figure.overlay-caption-center {
     margin: 0;
@@ -75,8 +81,16 @@ figure.overlay-caption-center h1, figure.overlay-caption-center h2 {
 }
 /* END COVER IMAGE STYLING*/
 
+footer {
+    border-top: solid 1px var(--secondary-color);
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) {
+    .desktop-warning {
+        display: none;
+    }
+
     /* BEGIN DROPDOWN STYLING */
     header {
         overflow: hidden;
@@ -103,6 +117,15 @@ figure.overlay-caption-center h1, figure.overlay-caption-center h2 {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+    .desktop-warning {
+        display: block;
+    }
+
+    main {
+        max-width: 800px;
+        margin: auto;
+    }
+
     header {
         display: flex;
         justify-content: space-between;
