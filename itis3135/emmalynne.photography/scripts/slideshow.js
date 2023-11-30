@@ -21,7 +21,6 @@ document.querySelector(".next").addEventListener("click", function() {
 let currentSlide = 0;
 showSlide(currentSlide);
 
-//
 function incrementSlide(numSlidesToChange) {
     let targetSlide = currentSlide + numSlidesToChange;
     if (targetSlide < 0) { targetSlide += NUM_SLIDES; }
