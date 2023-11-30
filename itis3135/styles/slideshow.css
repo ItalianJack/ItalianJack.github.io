@@ -6,10 +6,15 @@
     position: relative;
 }
 
+.slides {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
 .slides img {
     display: none;
-    object-fit: cover;
-    aspect-ratio: 1/1;
+    /*object-fit: cover;*/
+    /*aspect-ratio: 1/1;*/
     width: 100%;
 }
 
